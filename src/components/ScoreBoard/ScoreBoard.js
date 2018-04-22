@@ -15,31 +15,31 @@ class ScoreBoard extends Component {
           Player3: '',
           Player4: '',
           Player5: '',
-          TR1: '',
-          TR2: '',
-          TR3: '',
-          TR4: '',
-          TR5: '',
-          Awards1: '',
-          Awards2: '',
-          Awards3: '',
-          Awards4: '',
-          Awards5: '',
-          Milestones1: '',
-          Milestones2: '',
-          Milestones3: '',
-          Milestones4: '',
-          Milestones5: '',
-          GB1: '',
-          GB2: '',
-          GB3: '',
-          GB4: '',
-          GB5: '',
-          Cards1: '',
-          Cards2: '',
-          Cards3: '',
-          Cards4: '',
-          Cards5: '',
+          TR1: '0',
+          TR2: '0',
+          TR3: '0',
+          TR4: '0',
+          TR5: '0',
+          Awards1: '0',
+          Awards2: '0',
+          Awards3: '0',
+          Awards4: '0',
+          Awards5: '0',
+          Milestones1: '0',
+          Milestones2: '0',
+          Milestones3: '0',
+          Milestones4: '0',
+          Milestones5: '0',
+          GB1: '0',
+          GB2: '0',
+          GB3: '0',
+          GB4: '0',
+          GB5: '0',
+          Cards1: '0',
+          Cards2: '0',
+          Cards3: '0',
+          Cards4: '0',
+          Cards5: '0',
           Score1: '',
           Score2: '',
           Score3: '',
@@ -76,6 +76,7 @@ class ScoreBoard extends Component {
         this.handleCards3Change = this.handleCards3Change.bind(this);
         this.handleCards4Change = this.handleCards4Change.bind(this);
         this.handleCards5Change = this.handleCards5Change.bind(this);
+        this.tallyScores = this.tallyScores.bind(this);
     }
 
     handlePlayer1Change(event) {
@@ -228,13 +229,48 @@ class ScoreBoard extends Component {
         console.log({Cards5: event.target.value})
     }
 
-    // Note: Using this breaks the app lol
     tallyScores() {
         console.log('tallying the scores..')
-        return this.state.TR1;
+        this.setState({Score1: (this.state.TR1 + '+' + this.state.Awards1 + '+' + this.state.Milestones1 + '+' + this.state.GB1 + '+' + this.state.Cards1)})
+        console.log({Score1: (this.state.TR1 + '+' + this.state.Awards1 + '+' + this.state.Milestones1 + '+' + this.state.GB1 + '+' + this.state.Cards1)})
+        this.setState({Score2: (this.state.TR2 + '+' + this.state.Awards2 + '+' + this.state.Milestones2 + '+' + this.state.GB2 + '+' + this.state.Cards2)})
+        console.log({Score2: (this.state.TR2 + '+' + this.state.Awards2 + '+' + this.state.Milestones2 + '+' + this.state.GB2 + '+' + this.state.Cards2)})
+        this.setState({Score3: (this.state.TR3 + '+' + this.state.Awards3 + '+' + this.state.Milestones3 + '+' + this.state.GB3 + '+' + this.state.Cards3)})
+        console.log({Score3: (this.state.TR3 + '+' + this.state.Awards3 + '+' + this.state.Milestones3 + '+' + this.state.GB3 + '+' + this.state.Cards3)})
+        this.setState({Score4: (this.state.TR4 + '+' + this.state.Awards4 + '+' + this.state.Milestones4 + '+' + this.state.GB4 + '+' + this.state.Cards4)})
+        console.log({Score4: (this.state.TR4 + '+' + this.state.Awards4 + '+' + this.state.Milestones4 + '+' + this.state.GB4 + '+' + this.state.Cards4)})
+        this.setState({Score5: (this.state.TR5 + '+' + this.state.Awards5 + '+' + this.state.Milestones5 + '+' + this.state.GB5 + '+' + this.state.Cards5)})
+        console.log({Score5: (this.state.TR5 + '+' + this.state.Awards5 + '+' + this.state.Milestones5 + '+' + this.state.GB5 + '+' + this.state.Cards5)})
     }
 
     render(){
+
+        var TR1 = this.state.TR1;
+        var TR2 = this.state.TR2;
+        var TR3 = this.state.TR3;
+        var TR4 = this.state.TR4;
+        var TR5 = this.state.TR5;
+        var Awards1 = this.state.Awards1;
+        var Awards2 = this.state.Awards2;
+        var Awards3 = this.state.Awards3;
+        var Awards4 = this.state.Awards4;
+        var Awards5 = this.state.Awards5;
+        var Milestones1 = this.state.Milestones1;
+        var Milestones2 = this.state.Milestones2;
+        var Milestones3 = this.state.Milestones3;
+        var Milestones4 = this.state.Milestones4;
+        var Milestones5 = this.state.Milestones5;
+        var GB1 = this.state.GB1;
+        var GB2 = this.state.GB2;
+        var GB3 = this.state.GB3;
+        var GB4 = this.state.GB4;
+        var GB5 = this.state.GB5;
+        var Cards1 = this.state.Cards1;
+        var Cards2 = this.state.Cards2;
+        var Cards3 = this.state.Cards3;
+        var Cards4 = this.state.Cards4;
+        var Cards5 = this.state.Cards5;
+
         return (
             <div>
                 <div>
