@@ -231,16 +231,16 @@ class ScoreBoard extends Component {
 
     tallyScores() {
         console.log('tallying the scores..')
-        this.setState({Score1: (this.state.TR1 + '+' + this.state.Awards1 + '+' + this.state.Milestones1 + '+' + this.state.GB1 + '+' + this.state.Cards1)})
-        console.log({Score1: (this.state.TR1 + '+' + this.state.Awards1 + '+' + this.state.Milestones1 + '+' + this.state.GB1 + '+' + this.state.Cards1)})
-        this.setState({Score2: (this.state.TR2 + '+' + this.state.Awards2 + '+' + this.state.Milestones2 + '+' + this.state.GB2 + '+' + this.state.Cards2)})
-        console.log({Score2: (this.state.TR2 + '+' + this.state.Awards2 + '+' + this.state.Milestones2 + '+' + this.state.GB2 + '+' + this.state.Cards2)})
-        this.setState({Score3: (this.state.TR3 + '+' + this.state.Awards3 + '+' + this.state.Milestones3 + '+' + this.state.GB3 + '+' + this.state.Cards3)})
-        console.log({Score3: (this.state.TR3 + '+' + this.state.Awards3 + '+' + this.state.Milestones3 + '+' + this.state.GB3 + '+' + this.state.Cards3)})
-        this.setState({Score4: (this.state.TR4 + '+' + this.state.Awards4 + '+' + this.state.Milestones4 + '+' + this.state.GB4 + '+' + this.state.Cards4)})
-        console.log({Score4: (this.state.TR4 + '+' + this.state.Awards4 + '+' + this.state.Milestones4 + '+' + this.state.GB4 + '+' + this.state.Cards4)})
-        this.setState({Score5: (this.state.TR5 + '+' + this.state.Awards5 + '+' + this.state.Milestones5 + '+' + this.state.GB5 + '+' + this.state.Cards5)})
-        console.log({Score5: (this.state.TR5 + '+' + this.state.Awards5 + '+' + this.state.Milestones5 + '+' + this.state.GB5 + '+' + this.state.Cards5)})
+        this.setState({Score1: (parseInt(this.state.TR1) + parseInt(this.state.Awards1) + parseInt(this.state.Milestones1) + parseInt(this.state.GB1) + parseInt(this.state.Cards1))})
+        console.log({Score1: (parseInt(this.state.TR1) + parseInt(this.state.Awards1) + parseInt(this.state.Milestones1) + parseInt(this.state.GB1) + parseInt(this.state.Cards1))})
+        this.setState({Score2: (parseInt(this.state.TR2) + parseInt(this.state.Awards2) + parseInt(this.state.Milestones2) + parseInt(this.state.GB2) + parseInt(this.state.Cards2))})
+        console.log({Score2: (parseInt(this.state.TR2) + parseInt(this.state.Awards2) + parseInt(this.state.Milestones2) + parseInt(this.state.GB2) + parseInt(this.state.Cards2))})
+        this.setState({Score3: (parseInt(this.state.TR3) + parseInt(this.state.Awards3) + parseInt(this.state.Milestones3) + parseInt(this.state.GB3) + parseInt(this.state.Cards3))})
+        console.log({Score3: (parseInt(this.state.TR3) + parseInt(this.state.Awards3) + parseInt(this.state.Milestones3) + parseInt(this.state.GB3) + parseInt(this.state.Cards3))})
+        this.setState({Score4: (parseInt(this.state.TR4) + parseInt(this.state.Awards4) + parseInt(this.state.Milestones4) + parseInt(this.state.GB4) + parseInt(this.state.Cards4))})
+        console.log({Score4: (parseInt(this.state.TR4) + parseInt(this.state.Awards4) + parseInt(this.state.Milestones4) + parseInt(this.state.GB4) + parseInt(this.state.Cards4))})
+        this.setState({Score5: (parseInt(this.state.TR5) + parseInt(this.state.Awards5) + parseInt(this.state.Milestones5) + parseInt(this.state.GB5) + parseInt(this.state.Cards5))})
+        console.log({Score5: (parseInt(this.state.TR5) + parseInt(this.state.Awards5) + parseInt(this.state.Milestones5) + parseInt(this.state.GB5) + parseInt(this.state.Cards5))})
     }
 
     render(){
