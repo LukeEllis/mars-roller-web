@@ -11,7 +11,7 @@ class HomePage extends Component {
                 <div>
                     <ScoreCard></ScoreCard>
                     <AddCardButton></AddCardButton>
-                    <p>Ur on the homepage now lol</p>
+                    <p>You are on the Home Page.</p>
                 </div>
                 <div>
                     <NavLink to="/scoreboard"><h4>CLICK ME</h4></NavLink>
