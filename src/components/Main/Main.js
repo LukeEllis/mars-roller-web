@@ -22,8 +22,8 @@ class Main extends Component {
         return(
             <main>
                 <Switch>
-                    <Route exact path="/" render={(props)=><HomePage/>} />
-                    <Route path="/scoreboard" render={(props)=><ScoreBoard/>} />
+                    <Route exact path={`/`} render={(props)=><HomePage/>} />
+                    <Route exact path={`/scoreboard`} render={(props)=><ScoreBoard/>} />
                 </Switch>
             </main>
         )  

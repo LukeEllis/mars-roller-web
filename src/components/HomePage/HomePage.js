@@ -13,12 +13,13 @@ class HomePage extends Component {
                     <AddCardButton></AddCardButton>
                     <p>You are on the Home Page.</p>
                 </div>
-                <div>
-                    <NavLink to="/scoreboard"><h4>CLICK ME</h4></NavLink>
-                </div>
             </div>
         )
     }
 }
 
 export default HomePage;
+
+/* <div>
+        <NavLink to="/scoreboard"><h4>CLICK ME</h4></NavLink>
+    </div> */

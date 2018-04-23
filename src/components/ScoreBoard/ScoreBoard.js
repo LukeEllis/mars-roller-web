@@ -274,10 +274,6 @@ class ScoreBoard extends Component {
         return (
             <div>
                 <div>
-                    <p>You are on the Scoreboard page.</p>
-                    <NavLink to="/"><h4>CLICK ME</h4></NavLink>
-                </div>
-                <div>
                     <Row>
                         <Input placeholder="Game {Number}" s={2} label="Game #" />
                         <Input placeholder="Player 1" s={2} label="Player1" value={this.state.Player1} onChange={this.handlePlayer1Change} />
@@ -334,14 +330,7 @@ class ScoreBoard extends Component {
                                 Tally the scores!
                         </Button>
                     </Col>
-
                     <br />
-
-                    <Col m={6} s={12}>
-                        <Button>
-                            Who won?
-                        </Button>
-                    </Col>
                 </div>
             </div>
         )
@@ -349,3 +338,14 @@ class ScoreBoard extends Component {
 }
 
 export default ScoreBoard;
+
+/* <div>
+<p>You are on the Scoreboard page.</p>
+<NavLink to="/"><h4>CLICK ME</h4></NavLink>
+</div> */
+
+/* <Col m={6} s={12}>
+        <Button>
+                Who won?
+        </Button>
+    </Col> */
